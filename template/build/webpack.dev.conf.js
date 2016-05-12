@@ -19,7 +19,8 @@ config.build.pages.forEach(function(pageName) {
     plugins.push(new HtmlWebpackPlugin({
         filename: pageName + '.html',
         template: pageName + '.html',
-        inject: true
+        inject: true,
+        chunks: [pageName]
     }))
 })
 

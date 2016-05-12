@@ -30,6 +30,7 @@ config.build.pages.forEach(function(pageName) {
         : config.build.assetsRoot + '/' + pageName + '.html',
       template: pageName + '.html',
       inject: true,
+      chunks: [pageName]
       minify: {
         removeComments: true,
         collapseWhitespace: true,
