@@ -1,11 +1,12 @@
-# vue webpack
+# vue webpack 多页面模版
 
-## vue init webpack
+## Usage
 
-用https://github.com/vuejs-templates/webpack这个作为模版生成项目
+```
+vue init zzm2q/webpack
+```
 
-
-## vue init zzm2q/webpack
+## 模版用途
 
 使用自定义的模版生成项目，此模版也以下功能：
 
@@ -13,7 +14,7 @@
 * md5后缀可选性
 * 针对业务路径进行调整
 
-以下解释该模版如果解决上面的问题的
+## How
 
 vue从官方的webpack模版生成的是单页单入口的：
 
