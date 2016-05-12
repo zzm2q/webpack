@@ -20,7 +20,7 @@ var plugins = [
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     // extract css into its own file
-    new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css'))
+    new ExtractTextPlugin(utils.assetsPath('css/[name].css'))
 ];
 
 config.build.pages.forEach(function(pageName) {
@@ -47,8 +47,8 @@ module.exports = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].[chunkhash].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
+    filename: utils.assetsPath('js/[name].js'),
+    chunkFilename: utils.assetsPath('js/[id].js')
   },
   vue: {
     loaders: utils.cssLoaders({
