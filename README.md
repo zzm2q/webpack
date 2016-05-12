@@ -6,7 +6,7 @@
 vue init zzm2q/webpack
 ```
 
-在`config.js`添加页面即可
+在`config.js`添加页面：
 
 ```
 module.exports = {
@@ -20,6 +20,20 @@ module.exports = {
     ...
   }
 }
+```
+
+再在`src`下创建与页面名称相同的目录和入口文件即可：
+
+```
+src
+  assets
+  components
+  index
+    index.js
+  page2
+    page2.js
+  page3
+    page3.js
 ```
 
 ## 模版用途
