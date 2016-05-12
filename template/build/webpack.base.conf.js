@@ -3,10 +3,13 @@ var config = require('../config')
 var cssLoaders = require('./css-loaders')
 var projectRoot = path.resolve(__dirname, '../')
 
+var entry = {};
+config.build.pages.forEach(function(pageName) {
+    entry[pageName] = './src/' + pageName + '/' + pageName + '.js';
+});
+
 module.exports = {
-  entry: {
-    app: './src/main.js'
-  },
+  entry: entry,
   output: {
     path: config.build.assetsRoot,
     publicPath: config.build.assetsPublicPath,
