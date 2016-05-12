@@ -6,6 +6,22 @@
 vue init zzm2q/webpack
 ```
 
+在`config.js`添加页面即可
+
+```
+module.exports = {
+  build: {
+    pages: [
+        'index',
+        'page2',
+        'page3',
+        ...
+    ],
+    ...
+  }
+}
+```
+
 ## 模版用途
 
 使用自定义的模版生成项目，此模版也以下功能：
