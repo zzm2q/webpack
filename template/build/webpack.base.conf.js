@@ -8,11 +8,13 @@ config.build.pages.forEach(function(pageName) {
     entry[pageName] = './src/' + pageName + '/' + pageName + '.js';
 });
 
+console.log(process.env.NODE_ENV);
+
 module.exports = {
   entry: entry,
   output: {
     path: config.build.assetsRoot,
-    publicPath: '.' + config.build.assetsPublicPath,
+    publicPath: (process.env.NODE_ENV === 'production' ? '.' : '') + config.build.assetsPublicPath,
     filename: '[name].js'
   },
   resolve: {
