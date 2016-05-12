@@ -9,7 +9,8 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, 'dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',
-    productionSourceMap: false
+    productionSourceMap: false,
+    md5Suffix: false
   },
   dev: {
     port: 8080,
