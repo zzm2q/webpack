@@ -5,10 +5,6 @@
     <p>
       Welcome to your Vue.js app!
     </p>
-    <p style="color:red">
-      It seems you are using an outdated version of vue-cli.<br>
-      Upgrade to vue-cli@2.x to get access to newer versions of this template.
-    </p>
   </div>
 </template>
 
