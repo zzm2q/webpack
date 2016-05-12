@@ -30,7 +30,7 @@ module.exports = {
 * md5后缀可选性
 * 针对业务路径进行调整
 
-## How
+## 如何做到的
 
 vue从官方的webpack模版生成的是单页单入口的：
 
