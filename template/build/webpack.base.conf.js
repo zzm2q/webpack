@@ -12,7 +12,7 @@ module.exports = {
   entry: entry,
   output: {
     path: config.build.assetsRoot,
-    publicPath: config.build.assetsPublicPath,
+    publicPath: '.' + config.build.assetsPublicPath,
     filename: '[name].js'
   },
   resolve: {
