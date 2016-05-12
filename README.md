@@ -34,9 +34,9 @@ module.exports = {
 
 vue从官方的webpack模版生成的是单页单入口的：
 
-页面：index.html
-入口：src/main.js
-组件：src/App.js
+* 页面：index.html
+* 入口：src/main.js
+* 组件：src/App.js
 
 配置相关项有：
 
