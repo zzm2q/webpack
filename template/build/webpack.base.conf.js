@@ -8,8 +8,6 @@ config.build.pages.forEach(function(pageName) {
     entry[pageName] = './src/' + pageName + '/' + pageName + '.js';
 });
 
-console.log(process.env.NODE_ENV);
-
 module.exports = {
   entry: entry,
   output: {
